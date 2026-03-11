@@ -1,108 +1,57 @@
 body{
-    margin: 0;
-    padding:0;
-    line-height: 0.5;
-    background:linear-gradient(to left,#7808f0,#06bdf5);
-    font-family: sans-serif;
+font-family: Arial;
+background:#1e1e2f;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
 }
 
-.calci{
-    width: 500px;
-    padding-top: 100px;
-    padding-bottom: 100;
-    position: absolute;
-    top:50%;
-    left:70%;
-    transition:0.25px;
-    transform: translate(-50%,-50%);
-    text-align: center;
+.container{
+background:#2c2c3c;
+padding:25px;
+border-radius:10px;
+width:300px;
+box-shadow:0 10px 25px rgba(0,0,0,0.5);
 }
-#zero{
 
-height: 55;
-width: 116;
-font-size: 20;
-    font-family: sans-serif;
-    font-weight: 300;
-
+h1,h3{
+text-align:center;
+color:white;
 }
 
 #display{
-    
-    border:none;
-    background: white;
-    border-radius: 30px;
-    width: 245;
-    font-size: 20;
-    font-family: sans-serif;
-    font-weight: 300;
-    height: 60;
-    margin: auto;
-    border:2px solid white(5, 218, 255, 0.726);
-    color: black;
-
-
-
-}
-.button{
-    width: 55;
-    height: 55;
-    padding-top: -1;
-    font-size: 20;
-    border: none;
-    background: white;
-    font-family: sans-serif;
-    font-weight: 300;
-    border:0;
-    border-radius: 30px;
-    margin: 1.5;
-    transition:0.25px;
-    
-    
+width:100%;
+height:50px;
+font-size:20px;
+margin-bottom:15px;
+text-align:right;
+padding:10px;
+border:none;
+border-radius:6px;
 }
 
-h1{
-    margin-top: 300px;
-    margin-left: 100px;
-    font-family: sans-serif;
-
-    font-size:50;
-   
-    text-decoration: underline;
-
-color: white;
-text-transform: uppercase;
-font-weight: 700;}
-
-h2{
-
-    color: white;
-    margin-top: -1px;
-    font-family: sans-serif;
-    margin-left: 438px;
-}
-.operator{
-    width: 55;
-    height: 55;
-    padding-top: -1;
-    font-size: 20;
-    text-align: center;
-    color: black;
-    border: none;
-    background: white;
-    font-family: sans-serif;
-    font-weight: 500;
-    border:0;
-    border-radius: 30px;
-    margin: 1.5;
-    transition:0.25px;
-    cursor:pointer;
-    
-    
-    
+.buttons{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:10px;
 }
 
+button{
+padding:15px;
+font-size:18px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+background:#3e3e55;
+color:white;
+transition:0.2s;
+}
 
-.operator:hover{
-    background: #00d9ff;
+button:hover{
+background:#5a5aff;
+}
+
+.zero{
+grid-column:span 2;
 }
