@@ -1,23 +1,25 @@
 body{
 font-family: Arial;
-background:#1e1e2f;
+background: linear-gradient(90deg,#2193b0,#6a11cb);
 display:flex;
 justify-content:center;
 align-items:center;
 height:100vh;
+margin:0;
 }
 
-.container{
+.main{
+text-align:center;
+color:white;
+}
+
+.calculator{
 background:#2c2c3c;
 padding:25px;
 border-radius:10px;
 width:300px;
+margin-top:20px;
 box-shadow:0 10px 25px rgba(0,0,0,0.5);
-}
-
-h1,h3{
-text-align:center;
-color:white;
 }
 
 #display{
